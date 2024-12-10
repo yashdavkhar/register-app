@@ -12,7 +12,6 @@ pipeline {
         DOCKER_USER = "yash407"                             // Docker Hub username
         IMAGE_NAME = "${DOCKER_USER}/${APP_NAME}"           // Docker image name
         IMAGE_TAG = "${RELEASE}-${env.BUILD_NUMBER}"        // Docker image tag
-        JENKINS_API_TOKEN = credentials("JENKINS_API_TOKEN") // Jenkins API token
         DOCKER_PASS = 'Y@shdavkhar1'                        // Docker password (ideally use credentials)
     }
     
