@@ -9,10 +9,11 @@ pipeline {
     environment {
         APP_NAME = "register-app-pipeline"                  // Application name
         RELEASE = "1.0.0"                                   // Release version
-        DOCKER_USER = "yash407"                             // Docker Hub username
+        DOCKER_USER = "yash407"  
+        DOCKER_PASS = 'Y@shdavkhar1'                      // Docker Hub username
         IMAGE_NAME = "${DOCKER_USER}/${APP_NAME}"           // Docker image name
         IMAGE_TAG = "${RELEASE}-${env.BUILD_NUMBER}"        // Docker image tag
-        DOCKER_PASS = 'Y@shdavkhar1'                        // Docker password (ideally use credentials)
+                             
     }
     
     stages {
