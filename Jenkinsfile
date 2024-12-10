@@ -11,7 +11,7 @@ pipeline {
         RELEASE = "1.0.0"                                   // Release version
         IMAGE_NAME = "yash407/${APP_NAME}"                  // Docker image name
         IMAGE_TAG = "${RELEASE}-${env.BUILD_NUMBER}"        // Docker image tag
-        JENKINS_API_TOKEN = credentials('jenkins-api-token') // API token for triggering CD pipeline
+        JENKINS_API_TOKEN = credentials('JENKINS_API_TOKEN') // API token for triggering CD pipeline
     }
 
     stages {
